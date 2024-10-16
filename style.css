@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans";
+}
+body{
+    background: 
+    url(assets/images/background-pattern-desktop.svg) no-repeat top center,hsl(275, 100%, 97%); 
+    background-size:auto;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+.container{
+    background-color:  hsl(0, 0%, 100%);
+    width: 400px;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0px 4px 10px hsl(292, 34%, 13%);
+}
+.faq{
+    display: flex;
+    margin-bottom: 20px;
+}
+.faq h1{
+    color: hsl(292, 42%, 14%);
+    font-weight: 800;
+}
+.faq img{
+    width: 25px;
+    margin-right: 20px;
+}
+.questions{
+    margin-bottom: 30px;
+}
+.the-faqs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.the-faqs p{
+    color: hsl(292, 42%, 14%);
+    font-size: 12px;
+    font-weight: 600;
+}
+.the-faqs p:hover{
+    color: hsl(293, 52%, 70%);
+    cursor: pointer;
+    opacity: 100%;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.the-faqs img{
+    width: 18px;
+}
+#minus{
+    display: none;
+}
+#hidden{
+    display: none;
+    color: hsl(292, 42%, 14%);
+    font-size: 11px;
+    margin-top: 10px;
+    opacity: 80%;
+}
+
+@media screen and (max-width:480px) {
+    body{
+        background: 
+        url(assets/images/background-pattern-mobile.svg) no-repeat top center,hsl(275, 100%, 97%); background-size:contain;
+    }
+    .container{
+        width: 320px;
+    }
+    .faq h1{
+        font-size: 40px;
+    }
+    .images{
+        margin-bottom: 12px;
+    }
+    .the-faqs p{
+        font-size: 15px;
+        margin-right: 30px;
+    }
+    #hidden{
+        font-size: 13px;
+    }
+    .the-faqs img{
+        width: 25px;
+    }
+    
+}
