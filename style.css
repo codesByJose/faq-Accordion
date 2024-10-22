@@ -9,7 +9,7 @@
 body{
     background: 
     url(assets/images/background-pattern-desktop.svg) no-repeat top center,hsl(275, 100%, 97%); 
-    background-size:auto;
+    background-size:contain;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
@@ -31,6 +31,7 @@ body{
 .faq h1{
     color: hsl(292, 42%, 14%);
     font-weight: 800;
+    font-size: 30px;
 }
 .faq img{
     width: 25px;
@@ -46,7 +47,7 @@ body{
 }
 .the-faqs p{
     color: hsl(292, 42%, 14%);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
 }
 .the-faqs p:hover{
@@ -70,7 +71,7 @@ body{
 #hidden{
     display: none;
     color: hsl(292, 42%, 14%);
-    font-size: 11px;
+    font-size: 14px;
     margin-top: 10px;
     opacity: 80%;
 }
